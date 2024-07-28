@@ -15,7 +15,11 @@ const CustomHeader = () => {
 
       </TouchableOpacity>
       <TouchableOpacity style={styles.titleContainer}>
-        <Text>Home</Text>
+        <Text style={styles.title}>Delivery Now</Text>
+        <View style={styles.locationName}>
+          <Text style={styles.subtitle}>San Franscisco, CA</Text>
+          <Ionicons name='chevron-down' size={20} color={Colors.primary}></Ionicons>
+        </View>
       </TouchableOpacity>
 
       <TouchableOpacity style={
@@ -45,6 +49,15 @@ const styles = StyleSheet.create({
     gap:20,
     
   },
+  locationName:{
+    flexDirection:'row',
+       alignItems:'center',
+
+  },
+  title:{
+    fontSize:14,
+    color:Colors.medium,
+  },
   text:{
     color:'blue',
     fontSize:20,
@@ -58,8 +71,16 @@ flex:1
 
   },
 profileButton:{
+  backgroundColor:Colors.lightGrey,
+  padding:10,
+  borderRadius:50,
 
-}
+},
+subtitle:{
+  fontSize:18,
+  fontWeight:'bold',
+
+},
 
 
 });
