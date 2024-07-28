@@ -6,7 +6,7 @@ const TabsLayout = () => {
   return (
     <Tabs>
         <Tabs.Screen name='index'/>
-        <Tabs.Screen name='users'/>
+        <Tabs.Screen name='user'/>
     </Tabs>
   )
 }

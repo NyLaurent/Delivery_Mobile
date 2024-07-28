@@ -7,7 +7,7 @@ export default function RootLayout() {
   return (
     <Stack>
       <Stack.Screen name="(tabs)" options={{
-        title:'HomePage'
+        headerShown:false
        }} />
       
       
