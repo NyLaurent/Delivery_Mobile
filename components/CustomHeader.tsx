@@ -2,6 +2,8 @@ import { View, Text, StyleSheet, SafeAreaView,TouchableOpacity} from 'react-nati
 import React from 'react';
 import { Image } from 'react-native';
 import Constants from 'expo-constants';
+import { Ionicons } from '@expo/vector-icons';
+import Colors from '../constants/Colors';
 
 
 const CustomHeader = () => {
@@ -11,6 +13,15 @@ const CustomHeader = () => {
       <TouchableOpacity>
         <Image style={styles.bike} source={require('../assets/images/bike.png')}/>
 
+      </TouchableOpacity>
+      <TouchableOpacity style={styles.titleContainer}>
+        <Text>Home</Text>
+      </TouchableOpacity>
+
+      <TouchableOpacity style={
+        styles.profileButton
+      }>
+        <Ionicons name='person-outline' size={20} color={Colors.primary}/>
       </TouchableOpacity>
       </View>
       
@@ -26,10 +37,12 @@ const styles = StyleSheet.create({
   },
   container: {
     height:60,
-    backgroundColor: 'red',
+    backgroundColor: 'white',
     alignItems:'center',
     justifyContent:'space-between',
     flexDirection:'row',
+    paddingHorizontal:20,
+    gap:20,
     
   },
   text:{
@@ -39,7 +52,15 @@ const styles = StyleSheet.create({
   bike:{
     width: 30,
     height:30,
-  }
+  },
+  titleContainer:{
+flex:1
+
+  },
+profileButton:{
+
+}
+
 
 });
 
