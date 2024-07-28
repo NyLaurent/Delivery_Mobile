@@ -13,6 +13,7 @@ const SearchBar=()=>
     <View style={styles.searchSection}>
       <View style={styles.searcField}
       >
+        <Ionicons style={styles.searchIcon} name='search-outline' size={20} color={Colors.primary}></Ionicons>
         <TextInput style={styles.input} placeholder='Restaurants, groceries, dishes'/>
 
         
@@ -72,12 +73,21 @@ searchSection:{
   searcField:{
     flex:1,
     backgroundColor:Colors.lightGrey,
+    flexDirection:'row',
+    alignItems:'center',
   },
   input:{
     padding:10,
     color:Colors.mediumDark,
 
   },
+  searchIcon:{
+    paddingLeft:10,
+
+
+
+  },
+
   optionButton:{
     padding:10,
     borderRadius:8,
