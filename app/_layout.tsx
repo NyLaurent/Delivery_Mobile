@@ -1,7 +1,8 @@
 
 import { Stack } from 'expo-router';
 import CustomHeader from '../components/CustomHeader';
-import { SafeAreaProvider } from 'react-native-safe-area-context';
+
+import BottomSheetModalProvider from '@gorhom/bottom-sheet';
 
 
 
@@ -19,14 +20,16 @@ export const unstable_settings = {
   
 
   return (
+
+    <BottomSheetModalProvider>
     <Stack>
         <Stack.Screen name="index" options={{
-          header:()=>  <SafeAreaProvider>
+          header:()=>  
             <CustomHeader/>
-          </SafeAreaProvider>
+          
         }} />
         
       </Stack>
-    
+      </BottomSheetModalProvider>
   );
 }
