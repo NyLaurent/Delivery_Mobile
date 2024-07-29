@@ -1,12 +1,34 @@
-import { View, Text } from 'react-native'
-import React from 'react'
+import React from 'react';
+import Onboarding from 'react-native-onboarding-swiper';
+import Slide1 from './slide1';
+import Slide2 from './slide2';
+import Slide3 from './slide3';
 
-const Onboarding = () => {
+const OnboardingScreen = () => {
   return (
-    <View>
-      <Text>Onboarding</Text>
-    </View>
-  )
-}
+    <Onboarding
+      pages={[
+        {
+          backgroundColor: '#fff',
+          image: <Slide1 />,
+          title: '',
+          subtitle: '',
+        },
+        {
+          backgroundColor: 'red',
+          image: <Slide2 />,
+          title: '',
+          subtitle: '',
+        },
+        {
+          backgroundColor: 'blue',
+          image: <Slide3 />,
+          title: '',
+          subtitle: '',
+        },
+      ]}
+    />
+  );
+};
 
-export default Onboarding
+export default OnboardingScreen;

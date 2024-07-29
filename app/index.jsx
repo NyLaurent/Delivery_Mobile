@@ -4,12 +4,11 @@ import { Image } from 'react-native';
 import Onboarding from 'react-native-onboarding-swiper';
 import useRouter from 'expo-router'
 const index = () => {
-  const router = useRouter()
-
+  
     
   return (
     <Onboarding
-    onSkip={()=>router.navigate("/Home")}
+   
   pages={[
     {
       backgroundColor: '#fff',
